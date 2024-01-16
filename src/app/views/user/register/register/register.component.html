@@ -1,0 +1,23 @@
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+<div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Register</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <form #f="ngForm" (ngSubmit)="register(f)">
+      <div class="w3-section">
+        <label>username</label>
+        <input class="w3-input w3-border" type="text" name="username" ngModel #username="ngModel" required>
+      </div>
+      <div class="w3-section">
+        <label>email</label>
+        <input class="w3-input w3-border" type="email" name="email" ngModel #email="ngModel" required>
+      </div>
+      <div class="w3-section">
+        <label>password</label>
+        <input class="w3-input w3-border" type="password" name="password" ngModel #password="ngModel" required>
+      </div>
+      <div class="alert alert-danger" *ngIf="messageErr"> {{messageErr}} </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Rgister</button>
+    </form>  
+  </div>
+</div>
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.facebook.com/iyed.gabsu.5/" title="W3.CSS" target="_blank" class="w3-hover-opacity">Iyed Gabsi</a></p></div>

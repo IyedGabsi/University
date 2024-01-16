@@ -1,0 +1,13 @@
+<p>student works!</p>
+<ul *ngIf="dataObject">
+    <li>{{dataObject.firstname}}</li>
+    <li>{{dataObject.lastname}}</li>
+    <li>{{dataObject.age}}</li>
+    <li>{{dataObject.email}}</li>
+    <li>{{dataObject.phone}}</li>
+</ul>
+
+
+<div class="alert alert-danger" *ngIf="messageErr">
+    {{messageErr}}
+</div>
